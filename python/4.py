@@ -9,8 +9,8 @@ def largestPalindrom(n):
             if k < p:
                 break
             klist = [int(d) for d in str(k)]
-            k1 = klist[0:int(len(klist)/2.0+0.5)]
-            k2 = klist[len(klist)/2:len(klist)]
+            k1 = klist[:int(len(klist)/2.0+0.5)]
+            k2 = klist[int(len(klist)/2):]
             if k1 == k2[::-1]:
                 (p,x,y) = (k,i,j)
     return (p,x,y)
