@@ -26,7 +26,7 @@ def fibSum2(n):
 
 
 
-n = 4000000
+n = 4_000_000
 print(fibSum(n))
 print(fibSum2(n))
 
